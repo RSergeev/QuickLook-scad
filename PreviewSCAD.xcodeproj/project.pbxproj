@@ -1,0 +1,853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEA2CE222D46B3D900BAB402 /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED8F4D82D4651EC007135C0 /* QuickLookThumbnailing.framework */; };
+		CEC58EC82D46AC1F0072917B /* XPCService.xpc in Copy XPC Service */ = {isa = PBXBuildFile; fileRef = CED8F4C42D4650D3007135C0 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CED8F4DB2D4651EC007135C0 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED8F4DA2D4651EC007135C0 /* Quartz.framework */; };
+		CED8F4E32D4651EC007135C0 /* ThumbnailExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CED8F4D62D4651EC007135C0 /* ThumbnailExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CED8F4EA2D466C09007135C0 /* XPCService.xpc in Copy XPC Serivce */ = {isa = PBXBuildFile; fileRef = CED8F4C42D4650D3007135C0 /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CED8F4F02D467BD8007135C0 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED8F4DA2D4651EC007135C0 /* Quartz.framework */; };
+		CED8F4FD2D467BD8007135C0 /* QuickLookExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CED8F4EF2D467BD8007135C0 /* QuickLookExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC58EAB2D46AA820072917B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE146B7B2D464EA800B6B2F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED8F4EE2D467BD8007135C0;
+			remoteInfo = QuickLookExtension;
+		};
+		CEC58EAE2D46AA8C0072917B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE146B7B2D464EA800B6B2F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED8F4C32D4650D3007135C0;
+			remoteInfo = XPCService;
+		};
+		CED8F4E12D4651EC007135C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE146B7B2D464EA800B6B2F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED8F4D52D4651EC007135C0;
+			remoteInfo = ThumbnailExtension;
+		};
+		CED8F4FB2D467BD8007135C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE146B7B2D464EA800B6B2F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED8F4EE2D467BD8007135C0;
+			remoteInfo = QuickLookExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEC58EB02D46AA8C0072917B /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC58EC72D46AC090072917B /* Copy XPC Service */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				CEC58EC82D46AC1F0072917B /* XPCService.xpc in Copy XPC Service */,
+			);
+			name = "Copy XPC Service";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4E82D4651EC007135C0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CED8F4E32D4651EC007135C0 /* ThumbnailExtension.appex in Embed Foundation Extensions */,
+				CED8F4FD2D467BD8007135C0 /* QuickLookExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4E92D466BF5007135C0 /* Copy XPC Serivce */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				CED8F4EA2D466C09007135C0 /* XPCService.xpc in Copy XPC Serivce */,
+			);
+			name = "Copy XPC Serivce";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE146B832D464EA800B6B2F6 /* PreviewSCAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewSCAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED8F4C42D4650D3007135C0 /* XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED8F4D62D4651EC007135C0 /* ThumbnailExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ThumbnailExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED8F4D82D4651EC007135C0 /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		CED8F4DA2D4651EC007135C0 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		CED8F4EF2D467BD8007135C0 /* QuickLookExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = QuickLookExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CE146B932D464EA900B6B2F6 /* Exceptions for "PreviewSCAD" folder in "PreviewSCAD" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CE146B822D464EA800B6B2F6 /* PreviewSCAD */;
+		};
+		CED8F4CE2D4650D3007135C0 /* Exceptions for "XPCService" folder in "XPCService" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CED8F4C32D4650D3007135C0 /* XPCService */;
+		};
+		CED8F4E72D4651EC007135C0 /* Exceptions for "ThumbnailExtension" folder in "ThumbnailExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CED8F4D52D4651EC007135C0 /* ThumbnailExtension */;
+		};
+		CED8F5012D467BD8007135C0 /* Exceptions for "QuickLookExtension" folder in "QuickLookExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CED8F4EE2D467BD8007135C0 /* QuickLookExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CE146B852D464EA800B6B2F6 /* PreviewSCAD */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CE146B932D464EA900B6B2F6 /* Exceptions for "PreviewSCAD" folder in "PreviewSCAD" target */,
+			);
+			path = PreviewSCAD;
+			sourceTree = "<group>";
+		};
+		CED8F4C52D4650D3007135C0 /* XPCService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CED8F4CE2D4650D3007135C0 /* Exceptions for "XPCService" folder in "XPCService" target */,
+			);
+			path = XPCService;
+			sourceTree = "<group>";
+		};
+		CED8F4DC2D4651EC007135C0 /* ThumbnailExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CED8F4E72D4651EC007135C0 /* Exceptions for "ThumbnailExtension" folder in "ThumbnailExtension" target */,
+			);
+			path = ThumbnailExtension;
+			sourceTree = "<group>";
+		};
+		CED8F4F12D467BD8007135C0 /* QuickLookExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CED8F5012D467BD8007135C0 /* Exceptions for "QuickLookExtension" folder in "QuickLookExtension" target */,
+			);
+			path = QuickLookExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE146B802D464EA800B6B2F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4C12D4650D3007135C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4D32D4651EC007135C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED8F4DB2D4651EC007135C0 /* Quartz.framework in Frameworks */,
+				CEA2CE222D46B3D900BAB402 /* QuickLookThumbnailing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4EC2D467BD8007135C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED8F4F02D467BD8007135C0 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE146B7A2D464EA800B6B2F6 = {
+			isa = PBXGroup;
+			children = (
+				CE146B852D464EA800B6B2F6 /* PreviewSCAD */,
+				CED8F4C52D4650D3007135C0 /* XPCService */,
+				CED8F4DC2D4651EC007135C0 /* ThumbnailExtension */,
+				CED8F4F12D467BD8007135C0 /* QuickLookExtension */,
+				CED8F4D72D4651EC007135C0 /* Frameworks */,
+				CE146B842D464EA800B6B2F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE146B842D464EA800B6B2F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE146B832D464EA800B6B2F6 /* PreviewSCAD.app */,
+				CED8F4C42D4650D3007135C0 /* XPCService.xpc */,
+				CED8F4D62D4651EC007135C0 /* ThumbnailExtension.appex */,
+				CED8F4EF2D467BD8007135C0 /* QuickLookExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED8F4D72D4651EC007135C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CED8F4D82D4651EC007135C0 /* QuickLookThumbnailing.framework */,
+				CED8F4DA2D4651EC007135C0 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE146B822D464EA800B6B2F6 /* PreviewSCAD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE146B942D464EA900B6B2F6 /* Build configuration list for PBXNativeTarget "PreviewSCAD" */;
+			buildPhases = (
+				CE146B7F2D464EA800B6B2F6 /* Sources */,
+				CE146B802D464EA800B6B2F6 /* Frameworks */,
+				CE146B812D464EA800B6B2F6 /* Resources */,
+				CED8F4E82D4651EC007135C0 /* Embed Foundation Extensions */,
+				CEC58EB02D46AA8C0072917B /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED8F4E22D4651EC007135C0 /* PBXTargetDependency */,
+				CED8F4FC2D467BD8007135C0 /* PBXTargetDependency */,
+				CEC58EAC2D46AA820072917B /* PBXTargetDependency */,
+				CEC58EAF2D46AA8C0072917B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CE146B852D464EA800B6B2F6 /* PreviewSCAD */,
+			);
+			name = PreviewSCAD;
+			packageProductDependencies = (
+			);
+			productName = PreviewSCAD;
+			productReference = CE146B832D464EA800B6B2F6 /* PreviewSCAD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED8F4C32D4650D3007135C0 /* XPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED8F4CF2D4650D3007135C0 /* Build configuration list for PBXNativeTarget "XPCService" */;
+			buildPhases = (
+				CED8F4C02D4650D3007135C0 /* Sources */,
+				CED8F4C12D4650D3007135C0 /* Frameworks */,
+				CED8F4C22D4650D3007135C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CED8F4C52D4650D3007135C0 /* XPCService */,
+			);
+			name = XPCService;
+			packageProductDependencies = (
+			);
+			productName = XPCService;
+			productReference = CED8F4C42D4650D3007135C0 /* XPCService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		CED8F4D52D4651EC007135C0 /* ThumbnailExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED8F4E42D4651EC007135C0 /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */;
+			buildPhases = (
+				CED8F4D22D4651EC007135C0 /* Sources */,
+				CED8F4D32D4651EC007135C0 /* Frameworks */,
+				CED8F4D42D4651EC007135C0 /* Resources */,
+				CED8F4E92D466BF5007135C0 /* Copy XPC Serivce */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CED8F4DC2D4651EC007135C0 /* ThumbnailExtension */,
+			);
+			name = ThumbnailExtension;
+			packageProductDependencies = (
+			);
+			productName = ThumbnailExtension;
+			productReference = CED8F4D62D4651EC007135C0 /* ThumbnailExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CED8F4EE2D467BD8007135C0 /* QuickLookExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED8F4FE2D467BD8007135C0 /* Build configuration list for PBXNativeTarget "QuickLookExtension" */;
+			buildPhases = (
+				CED8F4EB2D467BD8007135C0 /* Sources */,
+				CED8F4EC2D467BD8007135C0 /* Frameworks */,
+				CED8F4ED2D467BD8007135C0 /* Resources */,
+				CEC58EC72D46AC090072917B /* Copy XPC Service */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CED8F4F12D467BD8007135C0 /* QuickLookExtension */,
+			);
+			name = QuickLookExtension;
+			packageProductDependencies = (
+			);
+			productName = QuickLookExtension;
+			productReference = CED8F4EF2D467BD8007135C0 /* QuickLookExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE146B7B2D464EA800B6B2F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					CE146B822D464EA800B6B2F6 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CED8F4C32D4650D3007135C0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CED8F4D52D4651EC007135C0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					CED8F4EE2D467BD8007135C0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = CE146B7E2D464EA800B6B2F6 /* Build configuration list for PBXProject "PreviewSCAD" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE146B7A2D464EA800B6B2F6;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE146B842D464EA800B6B2F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE146B822D464EA800B6B2F6 /* PreviewSCAD */,
+				CED8F4C32D4650D3007135C0 /* XPCService */,
+				CED8F4D52D4651EC007135C0 /* ThumbnailExtension */,
+				CED8F4EE2D467BD8007135C0 /* QuickLookExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE146B812D464EA800B6B2F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4C22D4650D3007135C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4D42D4651EC007135C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4ED2D467BD8007135C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE146B7F2D464EA800B6B2F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4C02D4650D3007135C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4D22D4651EC007135C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED8F4EB2D467BD8007135C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC58EAC2D46AA820072917B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED8F4EE2D467BD8007135C0 /* QuickLookExtension */;
+			targetProxy = CEC58EAB2D46AA820072917B /* PBXContainerItemProxy */;
+		};
+		CEC58EAF2D46AA8C0072917B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED8F4C32D4650D3007135C0 /* XPCService */;
+			targetProxy = CEC58EAE2D46AA8C0072917B /* PBXContainerItemProxy */;
+		};
+		CED8F4E22D4651EC007135C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED8F4D52D4651EC007135C0 /* ThumbnailExtension */;
+			targetProxy = CED8F4E12D4651EC007135C0 /* PBXContainerItemProxy */;
+		};
+		CED8F4FC2D467BD8007135C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED8F4EE2D467BD8007135C0 /* QuickLookExtension */;
+			targetProxy = CED8F4FB2D467BD8007135C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE146B952D464EA900B6B2F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PreviewSCAD/PreviewSCAD.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreviewSCAD/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE146B962D464EA900B6B2F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PreviewSCAD/PreviewSCAD.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PreviewSCAD/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CE146B972D464EA900B6B2F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE146B982D464EA900B6B2F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CED8F4D02D4650D3007135C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.XPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CED8F4D12D4650D3007135C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService/XPCService.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XPCService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = XPCService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.XPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CED8F4E52D4651EC007135C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.ThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CED8F4E62D4651EC007135C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ThumbnailExtension/ThumbnailExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThumbnailExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ThumbnailExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.ThumbnailExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CED8F4FF2D467BD8007135C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QuickLookExtension/QuickLookExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickLookExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickLookExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.QuickLookExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CED8F5002D467BD8007135C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = QuickLookExtension/QuickLookExtension.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4RW36ENH8U;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickLookExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = QuickLookExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.levitatingpineapple.PreviewSCAD.QuickLookExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE146B7E2D464EA800B6B2F6 /* Build configuration list for PBXProject "PreviewSCAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE146B972D464EA900B6B2F6 /* Debug */,
+				CE146B982D464EA900B6B2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE146B942D464EA900B6B2F6 /* Build configuration list for PBXNativeTarget "PreviewSCAD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE146B952D464EA900B6B2F6 /* Debug */,
+				CE146B962D464EA900B6B2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED8F4CF2D4650D3007135C0 /* Build configuration list for PBXNativeTarget "XPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED8F4D02D4650D3007135C0 /* Debug */,
+				CED8F4D12D4650D3007135C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED8F4E42D4651EC007135C0 /* Build configuration list for PBXNativeTarget "ThumbnailExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED8F4E52D4651EC007135C0 /* Debug */,
+				CED8F4E62D4651EC007135C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED8F4FE2D467BD8007135C0 /* Build configuration list for PBXNativeTarget "QuickLookExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED8F4FF2D467BD8007135C0 /* Debug */,
+				CED8F5002D467BD8007135C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE146B7B2D464EA800B6B2F6 /* Project object */;
+}
